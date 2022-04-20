@@ -1,56 +1,112 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
   font-family: 'Poppins', sans-serif;
-  margin:0px;
-}
-.margin-top-12{
-  margin-top:12px;
+  margin: 0px;
 }
 
-.wrap{
+body {
+  background-color: #E5E5E5;
+}
+
+.margin-top-12 {
+  margin-top: 12px;
+}
+
+.wrap {
   padding: 6px 24px;
 }
 
-header{
-  /* background-color: white; */
-  background-color: #292929;
+/* Header flex container */
+header {
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
-header > *{
+/* Header flex item */
+header>* {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
   flex: 1;
 }
 
-.logo-text{
-  margin:0;
-  flex:6;
+.logo-text {
+  margin: 0;
+  -webkit-box-flex: 6;
+  -ms-flex: 6;
+  flex: 6;
   color: #6070FF;
 }
 
-.headline-wrap{
-  background-image: url("../images/headline-bg.png");
+.headline {
+  background-image: url(../images/header-background-mobile.png);
+  background-repeat: no-repeat;
   background-size: cover;
-  padding: 114px 24px;
+  background-position: 0px bottom;
 }
 
-.welcome{
+/* Headline flex container */
+.headline-wrap {
+  background-image: url(../images/headline-bg.png);
+  background-size: cover;
+  padding: 114px 24px 136px 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+/* Headline flex items */
+.welcome {
   font-size: 40px;
   font-weight: 700;
-  color:#172B4D;
+  color: #172B4D;
   line-height: 52px;
   margin: 0px;
 }
-.headline-profile{
+
+.headline-profile {
   font-style: normal;
   font-size: 16px;
   font-weight: 400;
   color: #344563;
   line-height: 24px;
+  text-align: justify;
 }
 
-.headline-cta{
+.headline-cta {
   text-transform: uppercase;
   color: #7F8CFF;
 }
+
+/* Social icons flex container */
+.social-icons {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+}
+
+/* Social icons flex item */
+.social-icons li {
+  -ms-flex-preferred-size: 39px;
+  flex-basis: 39px;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+.social {
+  height: 25px;
+}
+
+/* End of headline flex items */
