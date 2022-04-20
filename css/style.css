@@ -2,4 +2,55 @@
 
 *{
   font-family: 'Poppins', sans-serif;
+  margin:0px;
+}
+.margin-top-12{
+  margin-top:12px;
+}
+
+.wrap{
+  padding: 6px 24px;
+}
+
+header{
+  /* background-color: white; */
+  background-color: #292929;
+  display: flex;
+  align-items: center;
+}
+
+header > *{
+  flex: 1;
+}
+
+.logo-text{
+  margin:0;
+  flex:6;
+  color: #6070FF;
+}
+
+.headline-wrap{
+  background-image: url("../images/headline-bg.png");
+  background-size: cover;
+  padding: 114px 24px;
+}
+
+.welcome{
+  font-size: 40px;
+  font-weight: 700;
+  color:#172B4D;
+  line-height: 52px;
+  margin: 0px;
+}
+.headline-profile{
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  color: #344563;
+  line-height: 24px;
+}
+
+.headline-cta{
+  text-transform: uppercase;
+  color: #7F8CFF;
 }
