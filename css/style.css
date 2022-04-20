@@ -35,7 +35,7 @@ body {
   flex: 1;
 }
 
-.header-nav span{
+.header-nav span {
   display: flex;
   justify-content: flex-end;
 }
