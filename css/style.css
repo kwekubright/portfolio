@@ -18,7 +18,7 @@ body {
 }
 
 /* Header flex container */
-header {
+.header-nav {
   background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -29,10 +29,15 @@ header {
 }
 
 /* Header flex item */
-header > * {
+.header-nav > * {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
+}
+
+.header-nav span{
+  display: flex;
+  justify-content: flex-end;
 }
 
 .logo-text {
