@@ -9,6 +9,12 @@ body {
   background-color: #e5e5e5;
 }
 
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .margin-top-12 {
   margin-top: 12px;
 }
@@ -20,9 +26,6 @@ body {
 /* Header flex container */
 .header-nav {
   background-color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -36,8 +39,11 @@ body {
 }
 
 .header-nav span {
-  display: flex;
   justify-content: flex-end;
+}
+
+.logo {
+  text-decoration: none;
 }
 
 .logo-text {
@@ -60,9 +66,6 @@ body {
   background-image: url(../images/headline-bg.png);
   background-size: cover;
   padding: 114px 24px 136px 24px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -88,8 +91,15 @@ body {
 }
 
 .headline-cta {
+  text-decoration: none;
+}
+
+.headline-cta h3 {
   text-transform: uppercase;
   color: #7f8cff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
 }
 
 /* Social icons flex container */
