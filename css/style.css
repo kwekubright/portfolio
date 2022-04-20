@@ -44,14 +44,14 @@ body {
 
 .logo {
   text-decoration: none;
-}
-
-.logo-text {
   margin: 0;
   -webkit-box-flex: 6;
   -ms-flex: 6;
   flex: 6;
   color: #6070ff;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
 }
 
 .headline {
