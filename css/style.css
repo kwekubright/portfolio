@@ -243,6 +243,10 @@ body {
   line-height: 16px;
 }
 
+.work-categories li:not(:first-child) {
+  margin-left: 8px;
+}
+
 .work-period ul li:first-child {
   list-style: none;
   margin-left: 0;
@@ -264,10 +268,6 @@ body {
   display: -ms-inline-flexbox;
   display: inline-flex;
   list-style: none;
-}
-
-.work-categories li:not(:first-child) {
-  margin-left: 8px;
 }
 
 /* About section */
