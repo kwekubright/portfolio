@@ -98,7 +98,8 @@ body {
   border: 1px solid #6070ff;
 }
 
-.button:disabled, .button[disabled] {
+.button:disabled,
+.button[disabled] {
   border: 1px solid #5e6c84;
   background-color: #fff;
   color: #5e6c84;
