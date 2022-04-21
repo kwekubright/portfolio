@@ -82,9 +82,26 @@ body {
   background-color: transparent;
 }
 
+.button:hover {
+  background-color: #6070ff;
+  color: #fff;
+}
+
+.button:focus {
+  border: 1px solid #2230d2;
+  background-color: #2230d2;
+  color: #fff;
+}
+
 .button-enabled {
   color: #396df2;
   border: 1px solid #6070ff;
+}
+
+.button:disabled, .button[disabled] {
+  border: 1px solid #5e6c84;
+  background-color: #fff;
+  color: #5e6c84;
 }
 
 /* End buttons */
