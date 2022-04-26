@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 0;
 }
 
@@ -63,6 +63,14 @@ body {
   line-height: 44px;
   color: #172b4d;
   text-transform: capitalize;
+}
+
+.section-description {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  width: 327px;
+  margin-bottom: 87px;
 }
 
 /* Buttons */
@@ -362,4 +370,98 @@ body {
   font-size: 15px;
   line-height: 20px;
   color: #253858;
+}
+
+.footer {
+  display: flex;
+  background-image: url("../images/contactbg.png");
+  background-color: #fff !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+}
+
+.form-fieldset {
+  border: none;
+  margin-right: 15px;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 103px 24px 0 24px;
+  background-image: url("../images/formbg.png");
+  background-position-x: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.footer-wrapper h2 {
+  color: #fff;
+  font-family: poppins, sans-serif;
+  font-style: bold;
+  font-size: 40px;
+  line-height: 52px;
+  margin-bottom: 12px;
+}
+
+.footer-wrapper p {
+  font-family: poppins, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
+  width: 100%;
+}
+
+.footer-wrapper input {
+  background-color: #fff;
+  width: 98%;
+  height: 48px;
+}
+
+.footer-wrapper input[type="text"] {
+  padding-left: 16px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #dfdbdc;
+}
+
+.footer-wrapper input[type="email"] {
+  padding-left: 16px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #dfdbdc;
+}
+
+form {
+  width: 100%;
+}
+
+#message {
+  width: 98%;
+  border: 1px solid #cfd8dc;
+  padding-left: 16px;
+  height: 170px;
+  border-radius: 8px;
+  padding-top: 15px;
+}
+
+#message::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.contact-button {
+  background-color: white;
+  padding: 12px 16px;
+}
+
+.contact-button:hover {
+  background-color: #6070ff;
+  color: white;
 }
