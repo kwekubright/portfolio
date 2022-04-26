@@ -391,3 +391,23 @@ body {
   text-align: center;
   color: #ebebff;
 }
+
+input {
+  background-color: #fff;
+  width: 327px;
+  height: 48px;
+}
+
+input[type=text] {
+padding-left: 16px;
+margin-bottom: 20px;
+border-radius: 8px;
+border: 1px solid #dfdbdc;
+}
+
+input[type=email] {
+  padding-left: 16px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #dfdbdc;
+  }
