@@ -66,7 +66,6 @@ body {
 }
 
 .section-description {
-  font-size: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
@@ -376,7 +375,7 @@ body {
 .footer {
   display: flex;
   background-image: url("../images/contactbg.png");
-  background-color: #ffffff !important;
+  background-color: #fff !important;
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: center;
