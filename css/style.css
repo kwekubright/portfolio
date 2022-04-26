@@ -375,10 +375,12 @@ body {
 
 .footer {
   display: flex;
-  background-image: url("../images/contactbg.png");
+  /* background-image: url("../images/contactbg.png"); */
+  background-image: url("../images/formbg.png");
+  border-radius: 80px 0 0 0;
+  background-color: #6070ff !important;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: white;
 }
 
 .form-fieldset {
@@ -391,8 +393,8 @@ body {
   align-items: center;
   margin-top: 103px;
   padding: 0 24px;
-  background-image: url("../images/formbg.png");
-  background-size: cover;
+
+  background-position-y: -100px;
   background-repeat: no-repeat;
 }
 
@@ -448,4 +450,14 @@ input[type="email"] {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
+}
+
+.contact-button {
+  background-color: white;
+  padding: 12px 16px;
+}
+
+.contact-button:hover {
+  background-color: #6070ff;
+  color: white;
 }
