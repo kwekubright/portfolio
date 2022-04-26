@@ -363,3 +363,31 @@ body {
   line-height: 20px;
   color: #253858;
 }
+
+.footer {
+  display: flex;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-wrapper h2 {
+  color: #fff;
+  font-family: poppins, sans-serif;
+  font-style: bold;
+  font-size: 40px;
+  line-height: 52px;
+  margin-bottom: 12px;
+}
+
+.footer-wrapper p {
+  font-family: poppins, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
+}
