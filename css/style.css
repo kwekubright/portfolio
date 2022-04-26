@@ -383,6 +383,7 @@ body {
 
 .form-fieldset {
   border: none;
+  margin-right: 15px;
 }
 
 .footer-wrapper {
