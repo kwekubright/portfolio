@@ -375,12 +375,11 @@ body {
 
 .footer {
   display: flex;
-  /* background-image: url("../images/contactbg.png"); */
-  background-image: url("../images/formbg.png");
-  border-radius: 80px 0 0 0;
-  background-color: #6070ff !important;
+  background-image: url("../images/contactbg.png");
+  background-color: #ffffff !important;
   background-repeat: no-repeat;
   background-size: cover;
+  justify-content: center;
 }
 
 .form-fieldset {
@@ -391,11 +390,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 103px;
-  padding: 0 24px;
-
-  background-position-y: -100px;
+  padding: 103px 24px 0 24px;
+  background-image: url("../images/formbg.png");
+  background-position-x: right;
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .footer-wrapper h2 {
@@ -414,30 +413,35 @@ body {
   line-height: 28px;
   text-align: center;
   color: #ebebff;
+  width: 100%;
 }
 
-input {
+.footer-wrapper input {
   background-color: #fff;
-  width: 327px;
+  width: 98%;
   height: 48px;
 }
 
-input[type="text"] {
+.footer-wrapper input[type="text"] {
   padding-left: 16px;
   margin-bottom: 20px;
   border-radius: 8px;
   border: 1px solid #dfdbdc;
 }
 
-input[type="email"] {
+.footer-wrapper input[type="email"] {
   padding-left: 16px;
   margin-bottom: 20px;
   border-radius: 8px;
   border: 1px solid #dfdbdc;
+}
+
+form {
+  width: 100%;
 }
 
 #message {
-  width: 327px;
+  width: 98%;
   border: 1px solid #cfd8dc;
   padding-left: 16px;
   height: 170px;
