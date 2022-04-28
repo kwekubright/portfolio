@@ -121,6 +121,7 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  flex-basis: 100%;
 }
 
 /* Header flex item */
@@ -489,7 +490,12 @@ form {
 
   .header-nav.wrap {
     padding-top: 25px;
-    padding-bottom: 0;
+    padding-bottom: 20px;
+  }
+
+  header {
+    position: fixed;
+    width: 100%;
   }
 
   .menus {
