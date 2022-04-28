@@ -11,9 +11,12 @@
   <body>
     <header>
       <nav class="flex header-nav padding-top-8 wrap">
-        <a href="#" class="logo">Bright</a>
-        <span class="flex">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <a href="#" class="logo">Kweku Bright</a>
+        <span class="flex menus">
+          <a href="#" class="header-nav-link">Portfolio</a>
+          <a href="#" class="header-nav-link">About</a>
+          <a href="#" class="header-nav-link">Contact</a>
+          <svg class="mobile-nav-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M3 7C3 6.44772 3.44772 6 4 6H20C20.5523 6 21 6.44772 21 7C21 7.55228 20.5523 8 20 8H4C3.44772 8 3 7.55228 3 7ZM3 12C3 11.4477 3.44772 11 4 11L20 11C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13L4 13C3.44772 13 3 12.5523 3 12ZM4 16C3.44772 16 3 16.4477 3 17C3 17.5523 3.44772 18 4 18H20C20.5523 18 21 17.5523 21 17C21 16.4477 20.5523 16 20 16H4Z" fill="#6070FF"/>
           </svg>
         </span>
@@ -22,11 +25,13 @@
 
     <section class="headline">
       <div class="flex headline-wrap">
-        <h2 class="welcome">I’m Bright Glad to see you!</h2>
+        <h2 class="welcome">I’m Bright <br>Glad to see you!</h2>
         <p class="headline-profile text-color-primary margin-top-12">I’m a software developer! I can help you build a product , feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
+        <br>
         <a href="#" class="headline-cta margin-top-12">
           <h3>Let's connect</h3>
         </a>
+        <br>
         <ul class="social-icons margin-top-12">
           <li>
             <a href="#">
@@ -61,118 +66,137 @@
     <section class="works">
       <div class="grid works-grid-container wrap padding-top-0">
         <div class="flex works-grid-item">
-          <img class="width-100" src="images/works/avocode.jpeg" alt="Avocode website screenshot">
-          <h3 class="section-title margin-top-12">Avocode portfolio</h3>
-          <div class="work-period">
-            <ul>
-              <li class="text-color-primary">Canopy</li>
-              <li>Back End Dev</li>
-              <li>2015</li>
-            </ul>
+          <div class="work-image">
+            <img class="width-100" src="images/works/avocode.jpeg" alt="Avocode website screenshot">
           </div>
-          <p class="work-description text-color-primary margin-top-20">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-          <ul class="work-categories margin-top-12 padding-0">
-            <li><span>html</span></li>
-            <li><span>css</span></li>
-            <li><span>javascript</span></li>
-          </ul>
-          <button type="button" class="button button-enabled">See Project</button>
+          <div class="flex work-details-wrapper">
+            <h3 class="section-title margin-top-12">Avocode portfolio</h3>
+            <div class="work-period">
+              <ul>
+                <li class="text-color-primary">Canopy</li>
+                <li>Back End Dev</li>
+                <li>2015</li>
+              </ul>
+            </div>
+            <p class="work-description text-color-primary margin-top-20">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+            <ul class="work-categories margin-top-12 padding-0">
+              <li><span>html</span></li>
+              <li><span>css</span></li>
+              <li><span>javascript</span></li>
+            </ul>
+            <button type="button" class="button button-enabled">See Project</button>
+          </div>
+        </div>
+
+        <div class="flex works-grid-item row-reverse">
+          <div class="work-image">
+            <img class="width-100" src="images/works/availability.jpeg" alt="Calenda app screenshot">
+          </div>
+          <div class="flex work-details-wrapper">
+            <h3 class="section-title margin-top-12">Calenda web app</h3>
+            <div class="work-period">
+              <ul>
+                <li class="text-color-primary">Canopy</li>
+                <li>Back End Dev</li>
+                <li>2015</li>
+              </ul>
+            </div>
+            <p class="work-description text-color-primary margin-top-20">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+            <ul class="work-categories margin-top-12 padding-0">
+              <li><span>html</span></li>
+              <li><span>css</span></li>
+              <li><span>javascript</span></li>
+            </ul>
+            <button type="button" class="button button-enabled">See Project</button>
+          </div>
         </div>
 
         <div class="flex works-grid-item">
-          <img class="width-100" src="images/works/availability.jpeg" alt="Calenda app screenshot">
-          <h3 class="section-title margin-top-12">Calenda web app</h3>
-          <div class="work-period">
-            <ul>
-              <li class="text-color-primary">Canopy</li>
-              <li>Back End Dev</li>
-              <li>2015</li>
-            </ul>
+          <div class="work-image">
+            <img class="width-100" src="images/works/gymfit.png" alt="Gymfit website screenshot">
           </div>
-          <p class="work-description text-color-primary margin-top-20">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-          <ul class="work-categories margin-top-12 padding-0">
-            <li><span>html</span></li>
-            <li><span>css</span></li>
-            <li><span>javascript</span></li>
-          </ul>
-          <button type="button" class="button button-enabled">See Project</button>
+          <div class="flex work-details-wrapper">
+            <h3 class="section-title margin-top-12">Gymfit </h3>
+            <div class="work-period">
+              <ul>
+                <li class="text-color-primary">Canopy</li>
+                <li>Back End Dev</li>
+                <li>2015</li>
+              </ul>
+            </div>
+            <p class="work-description text-color-primary margin-top-20">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+            <ul class="work-categories margin-top-12 padding-0">
+              <li><span>html</span></li>
+              <li><span>css</span></li>
+              <li><span>javascript</span></li>
+            </ul>
+            <button type="button" class="button button-enabled">See Project</button>
+          </div>
         </div>
 
-        <div class="flex works-grid-item">
-          <img class="width-100" src="images/works/gymfit.png" alt="Gymfit website screenshot">
-          <h3 class="section-title margin-top-12">Gymfit </h3>
-          <div class="work-period">
-            <ul>
-              <li class="text-color-primary">Canopy</li>
-              <li>Back End Dev</li>
-              <li>2015</li>
-            </ul>
+        <div class="flex works-grid-item row-reverse">
+          <div class="work-image">
+            <img class="width-100" src="images/works/printing.png" alt="Printing press website screenshot">
           </div>
-          <p class="work-description text-color-primary margin-top-20">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-          <ul class="work-categories margin-top-12 padding-0">
-            <li><span>html</span></li>
-            <li><span>css</span></li>
-            <li><span>javascript</span></li>
-          </ul>
-          <button type="button" class="button button-enabled">See Project</button>
-        </div>
-
-        <div class="flex works-grid-item">
-          <img class="width-100" src="images/works/printing.png" alt="Printing press website screenshot">
-          <h3 class="section-title margin-top-12">Printing made easy</h3>
-          <div class="work-period">
-            <ul>
-              <li class="text-color-primary">Canopy</li>
-              <li>Back End Dev</li>
-              <li>2015</li>
+          <div class="flex work-details-wrapper">
+            <h3 class="section-title margin-top-12">Printing made easy</h3>
+            <div class="work-period">
+              <ul>
+                <li class="text-color-primary">Canopy</li>
+                <li>Back End Dev</li>
+                <li>2015</li>
+              </ul>
+            </div>
+            <p class="work-description text-color-primary margin-top-20">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+            <ul class="work-categories margin-top-12 padding-0">
+              <li><span>html</span></li>
+              <li><span>css</span></li>
+              <li><span>javascript</span></li>
             </ul>
+            <button type="button" class="button button-enabled">See Project</button>
           </div>
-          <p class="work-description text-color-primary margin-top-20">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-          <ul class="work-categories margin-top-12 padding-0">
-            <li><span>html</span></li>
-            <li><span>css</span></li>
-            <li><span>javascript</span></li>
-          </ul>
-          <button type="button" class="button button-enabled">See Project</button>
         </div>
       </div>
     </section>
 
     <section class="about-myself padding-top-114">
       <div class="flex about-wrap">
-        <h2 class="section-title">About myself</h2>
-        <p class="headline-profile text-color-primary margin-top-12">I’m a software developer! I can help you build a product , feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
-        <a href="#" class="headline-cta margin-top-12">
-          <h3>Let's connect</h3>
-        </a>
-        <ul class="social-icons margin-top-12">
-          <li>
-            <a href="#">
-              <img class="social twitter" src="images/icons/twitter-icon.png" alt="Twitter icon">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img class="social linkedin" src="images/icons/linkedin-icon.png" alt="Twitter icon">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img class="social m" src="images/icons/m-icon.png" alt="Twitter icon">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img class="social github" src="images/icons/github-icon.png" alt="Twitter icon">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img class="social f" src="images/icons/f-icon.png" alt="Twitter icon">
-            </a>
-          </li>
-        </ul>
-        <button type="button" class="button button-enabled">See my resume</button>
+        <div class="about-details-wrap">
+          <h2 class="section-title">About <br> myself</h2>
+          <p class="headline-profile text-color-primary margin-top-12">I’m a software developer! I can help you build a product , feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
+          <a href="#" class="headline-cta margin-top-12">
+            <br/>
+            <h3>Let's connect</h3>
+          </a>
+          <ul class="social-icons margin-top-12">
+            <li>
+              <a href="#">
+                <img class="social twitter" src="images/icons/twitter-icon.png" alt="Twitter icon">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img class="social linkedin" src="images/icons/linkedin-icon.png" alt="Twitter icon">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img class="social m" src="images/icons/m-icon.png" alt="Twitter icon">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img class="social github" src="images/icons/github-icon.png" alt="Twitter icon">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img class="social f" src="images/icons/f-icon.png" alt="Twitter icon">
+              </a>
+            </li>
+          </ul>
+          <button type="button" class="button button-enabled">See my resume</button>
+        </div>
 
         <div class="other-info">
           <ul class="flex other-info-wrap padding-0">
@@ -241,7 +265,7 @@
             <div class="form-group">
               <textarea name="message" rows="10" cols="30" id="message" class="form-input" placeholder="Please write your message here" maxlength="500" required></textarea>
             </div>
-            <div class="form-group">
+            <div class="form-group web-centered">
               <button type="submit" class="button button-enabled contact-button">Get In Touch</button>
             </div>
           </fieldset>
