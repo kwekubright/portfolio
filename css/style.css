@@ -158,7 +158,7 @@ body {
 
 /* Headline flex container */
 .headline-wrap {
-  background-image: url(../images/header-bg.png);
+  background-image: url(../images/headline-bg.png);
   background-size: cover;
   padding: 114px 24px 136px 24px;
   -webkit-box-orient: vertical;
@@ -486,6 +486,7 @@ form {
 
   .headline-wrap {
     padding: 314px 260px 225px 260px;
+    background-image: url(../images/header-bg.png);
   }
 
   .header-nav.wrap {
