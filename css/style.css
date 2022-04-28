@@ -481,7 +481,7 @@ form {
 
 @media (min-width: 768px) {
   .wrap {
-    padding : 142px 142px;
+    padding: 142px 142px;
   }
 
   .headline-wrap {
@@ -540,7 +540,7 @@ form {
   .about-wrap {
     flex-direction: row;
     gap: 37px;
-    padding:114px 142px 136px 142px;
+    padding: 114px 142px 136px 142px;
   }
 
   .li-flex.wrap {
