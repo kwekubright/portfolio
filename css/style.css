@@ -470,6 +470,14 @@ form {
   color: white;
 }
 
+.header-nav-link {
+  display: none;
+}
+
+.mobile-nav-icon {
+  display: block;
+}
+
 @media (min-width: 768px) {
   .wrap {
     padding : 142px 142px;
@@ -486,9 +494,11 @@ form {
 
   .menus {
     gap: 32px;
+    display: inherit;
   }
 
   .menus a {
+    display: block;
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
@@ -499,6 +509,7 @@ form {
   .mobile-nav-icon {
     display: none;
   }
+
   .works-grid-item {
     flex-direction: row;
     gap: 46px;
