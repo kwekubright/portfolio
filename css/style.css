@@ -535,7 +535,7 @@ form {
   }
 
   .about-details-wrap {
-    flex-basis: 50%;
+    flex-basis: 40%;
   }
 
   .about-wrap {
@@ -560,6 +560,8 @@ form {
     flex-direction: row;
     display: flex;
     gap: 12px;
+    padding-left: 0;
+    padding-bottom: 11px;
   }
 
   .details-list-item {
@@ -580,5 +582,19 @@ form {
 
   .contact-button {
     margin-bottom: 139px;
+  }
+
+  .section-description {
+    margin-bottom: 25px;
+  }
+
+  .footer-wrapper input[type="text"],
+  .footer-wrapper input[type="email"],
+  .footer-wrapper textarea {
+    border-radius: 0 !important;
+  }
+
+  form {
+    width: 88%;
   }
 }
