@@ -5,6 +5,17 @@
   margin: 0;
 }
 
+.transition {
+  transition: all 0.5s ease-in-out;
+}
+
+.transform-scale:hover {
+  transform: scale(0.9);
+}
+
+.scale-out:hover{
+  transform: scale(1.1);
+}
 body {
   background-color: #e5e5e5;
 }
