@@ -247,6 +247,11 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  transition: 2s;
+}
+
+.works-grid-item:hover {
+transform: scale(1.1);
 }
 
 .work-period ul {
