@@ -147,6 +147,11 @@ body {
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
+  transition: 2s;
+}
+
+.logo:hover {
+  transform: rotateX(360deg);
 }
 
 .headline {
