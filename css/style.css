@@ -256,8 +256,9 @@ body {
 }
 
 .works-grid-item:hover {
-  transform: scale(1.1);
+transform: scale(1.1);
 }
+
 .work-period ul {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
