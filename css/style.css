@@ -116,6 +116,11 @@ body {
 /* End buttons */
 
 /* Header flex container */
+
+header {
+  z-index: 99999;
+}
+
 .header-nav {
   background-color: #fff;
   -webkit-box-align: center;
