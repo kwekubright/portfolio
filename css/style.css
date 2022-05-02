@@ -116,6 +116,11 @@ body {
 /* End buttons */
 
 /* Header flex container */
+
+header {
+  z-index: 99999;
+}
+
 .header-nav {
   background-color: #fff;
   -webkit-box-align: center;
@@ -256,7 +261,7 @@ body {
 }
 
 .works-grid-item:hover {
-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .work-period ul {
