@@ -258,11 +258,6 @@ header {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  transition: 60s;
-}
-
-.works-grid-item:hover {
-  transform: scale(1.1);
 }
 
 .work-period ul {
