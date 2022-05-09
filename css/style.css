@@ -496,6 +496,7 @@ form {
 }
 
 .mobile-menu {
+  display: none;
   position: fixed;
   background: #6070ffcf;
   width: 100%;
