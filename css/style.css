@@ -20,7 +20,6 @@ body {
 
 .flex {
   -webkit-display: flex;
-  -ms-flexbox: flex;
   display: flex;
 }
 
@@ -210,8 +209,6 @@ header {
 /* Social icons flex container */
 .social-icons {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 0;
 }
