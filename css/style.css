@@ -3,6 +3,7 @@
 * {
   font-family: "Poppins", sans-serif;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -18,8 +19,7 @@ body {
 }
 
 .flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
+  -webkit-display: flex;
   display: flex;
 }
 
@@ -209,8 +209,6 @@ header {
 /* Social icons flex container */
 .social-icons {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 0;
 }
@@ -420,7 +418,7 @@ header {
 .footer-wrapper h2 {
   color: #fff;
   font-family: poppins, sans-serif;
-  font-style: bold;
+  font-weight: bold;
   font-size: 40px;
   line-height: 52px;
   margin-bottom: 12px;
@@ -429,7 +427,6 @@ header {
 .footer-wrapper p {
   font-family: poppins, sans-serif;
   font-size: 20px;
-  font-style: normal;
   line-height: 28px;
   text-align: center;
   color: #ebebff;
@@ -492,6 +489,32 @@ form {
 
 .mobile-nav-icon {
   display: block;
+}
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  background: #6070ffcf;
+  width: 100%;
+  height: 100vh;
+  gap: 2.5rem;
+  flex-direction: column;
+  padding: 1.875rem;
+  backdrop-filter: blur(0.3125rem);
+  -webkit-backdrop-filter: blur(0.3125rem);
+}
+
+.mobile-menu > a {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.75rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.mobile-menu-close {
+  justify-content: flex-end;
 }
 
 @media (min-width: 768px) {
