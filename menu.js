@@ -11,3 +11,11 @@ mobileClose.addEventListener('click', function () {
   //show the mobile menu
   document.querySelector('.mobile-menu').style.display = 'none';
 });
+
+//close menu on click mobile-nav-item
+let mobileNavItems = document.querySelectorAll('.mobile-nav-item');
+mobileNavItems.forEach(function (item) {
+  item.addEventListener('click', function () {
+    document.querySelector('.mobile-menu').style.display = 'none';
+  });
+});
