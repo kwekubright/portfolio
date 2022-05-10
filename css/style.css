@@ -562,10 +562,11 @@ form {
 
   .work-details-wrapper {
     flex-direction: column;
+    flex: 1;
   }
 
   .work-image {
-    flex-basis: 50%;
+    flex: 1;
   }
 
   .row-reverse {
