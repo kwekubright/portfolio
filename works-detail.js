@@ -43,34 +43,35 @@ let works = {
 }
 
 //select the works container
-let workCardContainer = document.querySelector(".works-grid-container");
+const workCardContainer = document.querySelector(".works-grid-container");
 let workCard = "";
 let index = 0;
 
 //create the work cards
-for (let work in works) {
+for (let key in works) {
   index++;
   workCard +=
     `
     <div class="flex works-grid-item ${wordCardShouldReverse(index)}">
       <div class="work-image">
-        <img class="width-100" src="${works[work].featured_image}" alt="${works[work].title}">
+        <img class="width-100" src="${works[key].featured_image}" alt="${works[key].title}">
       </div>
       <div class="flex work-details-wrapper">
-      <h3 class="section-title margin-top-12">${works[work].title}</h3>
-      <div class="work-period"> ${breadcrumbsHtml(works, work)} </div > 
-      <p class="work-description text-color-primary margin-top-20">${works[work].description}</p>
-      ${languageHtml(works, work)}
+      <h3 class="section-title margin-top-12">${works[key].title}</h3>
+      <div class="work-period"> ${breadcrumbsHtml(works, key)} </div > 
+      <p class="work-description text-color-primary margin-top-20">${works[key].description}</p>
+      ${languageHtml(works, key)}
       <button type="button" class="button button-enabled">See Project</button>
       </div>
     </div>
   `;
 }
+
 //append the work cards to the works container
 workCardContainer.innerHTML = workCard;
 
 //reverse the order of the work cards
-function wordCardShouldReverse() {
+function wordCardShouldReverse(integ) {
   if (index % 2 === 0) {
     return "row-reverse";
   } else {
