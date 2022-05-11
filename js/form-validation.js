@@ -1,7 +1,7 @@
 // add submit event listener
 document.querySelector('#contact-form').addEventListener('submit', (event) => {
   // select the email field
-  var email = document.querySelector('#email');
+  const email = document.querySelector('#email');
   // check is email is lowercase
   if (email.value !== email.value.toLowerCase()) {
     event.preventDefault();
