@@ -59,22 +59,26 @@ function workCardShouldReverse(index) {
 
 // create the breadcrumbs
 function breadcrumbsHtml(workObj, key, bread = '') {
+  /* eslint-disable no-restricted-syntax */
   for (const breadcrumb in workObj[key].breadcrumbs) {
     if (breadcrumb) {
       bread += `<li>${workObj[key].breadcrumbs[breadcrumb]}</li>`;
     }
   }
+  /* eslint-enable no-restricted-syntax */
 
   return bread;
 }
 
 // create the language list
 function languageHtml(workObj, key, langList = '') {
+  /* eslint-disable no-restricted-syntax */
   for (const lang in workObj[key].lang_list) {
     if (lang) {
       langList += `<li><span>${workObj[key].lang_list[lang]}</span></li>`;
     }
   }
+  /* eslint-enable no-restricted-syntax */
 
   return langList;
 }
@@ -88,23 +92,24 @@ let index = 0;
 
 /* eslint-disable no-restricted-syntax */
 for (const key in works) {
-  index += 1;
-  workCard
-    +=
-  `
-  <div class="flex works-grid-item ${workCardShouldReverse(index)}">
-    <div class="work-image">
-      <img class="width-100" src="${works[key].featured_image}" alt="${works[key].title}">
-    </div>
-    <div class="flex work-details-wrapper">
-    <h3 class="section-title margin-top-12">${works[key].title}</h3>
-    <div class="work-period"> <ul>${breadcrumbsHtml(works, key)} </ul> </div> 
-    <p class="work-description text-color-primary margin-top-20">${works[key].description}</p>
-    <ul class="work-categories margin-top-12 padding-0">${languageHtml(works, key)}</ul>
-    <button type="button" class="button button-enabled see-project-button" data-work="${key}">See Project</button>
-    </div>
-  </div>
-`;
+  if (key) {
+    index += 1;
+    workCard
+      += `
+        <div class="flex works-grid-item ${workCardShouldReverse(index)}">
+          <div class="work-image">
+            <img class="width-100" src="${works[key].featured_image}" alt="${works[key].title}">
+          </div>
+          <div class="flex work-details-wrapper">
+          <h3 class="section-title margin-top-12">${works[key].title}</h3>
+          <div class="work-period"> <ul>${breadcrumbsHtml(works, key)} </ul> </div> 
+          <p class="work-description text-color-primary margin-top-20">${works[key].description}</p>
+          <ul class="work-categories margin-top-12 padding-0">${languageHtml(works, key)}</ul>
+          <button type="button" class="button button-enabled see-project-button" data-work="${key}">See Project</button>
+          </div>
+        </div>
+      `;
+  }
 }
 /* eslint-enable no-restricted-syntax */
 
