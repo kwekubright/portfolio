@@ -9,9 +9,9 @@ function showWorkModal(work) {
   // insert work description to the modal
   document.querySelector('.modal-description').innerHTML = workDetails.details;
   // add the breadcrumbs to the modal
-  document.querySelector('.work-modal-breadcrumbs').innerHTML = breadcrumbsHtml(works, work);
+  document.querySelector('.work-modal-breadcrumbs > ul').innerHTML = breadcrumbsHtml(works, work);
   // add the languages to the modal
-  document.querySelector('.work-modal-languages').innerHTML = languageHtml(works, work);
+  document.querySelector('.work-modal-languages > ul').innerHTML = languageHtml(works, work);
   // add live demo link 
   document.querySelector('#work-modal-live-demo').href = workDetails.live_demo;
   // add source link

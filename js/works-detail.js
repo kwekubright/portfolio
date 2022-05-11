@@ -3,34 +3,29 @@ function workCardShouldReverse(index) {
   if (index % 2 === 0) {
     return 'row-reverse';
   }
+  return '';
 }
 
 // create the breadcrumbs
-function breadcrumbsHtml(workObj, key) {
-  let bread = '<ul>';
-
+function breadcrumbsHtml(workObj, key, bread = '') {
   /* eslint-disable no-restricted-syntax */
   for (let breadcrumb in workObj[key].breadcrumbs) {
     bread += `<li>${workObj[key].breadcrumbs[breadcrumb]}</li>`;
   }
   /* eslint-enable no-restricted-syntax */
 
-  bread += '</ul>';
   return bread;
 }
 
 // create the language list
-function languageHtml(workObj, key) {
-  let lang_list = '<ul class="work-categories margin-top-12 padding-0">';
-
+function languageHtml(workObj, key, langList = '') {
   /* eslint-disable no-restricted-syntax */
   for (let lang in workObj[key].lang_list) {
-    lang_list += `<li><span>${workObj[key].lang_list[lang]}</span></li>`;
+    langList += `<li><span>${workObj[key].langList[lang]}</span></li>`;
   }
   /* eslint-enable no-restricted-syntax */
 
-  lang_list += '</ul>';
-  return lang_list;
+  return langList;
 }
 
 //  select the works container
@@ -51,9 +46,9 @@ for (const key in works) {
       </div>
       <div class="flex work-details-wrapper">
       <h3 class="section-title margin-top-12">${works[key].title}</h3>
-      <div class="work-period"> ${breadcrumbsHtml(works, key)} </div > 
+      <div class="work-period"> <ul>${breadcrumbsHtml(works, key)} </ul> </div> 
       <p class="work-description text-color-primary margin-top-20">${works[key].description}</p>
-      ${languageHtml(works, key)}
+      <ul class="work-categories margin-top-12 padding-0">${languageHtml(works, key)}</ul>
       <button type="button" class="button button-enabled see-project-button" data-work="${key}">See Project</button>
       </div>
     </div>
