@@ -191,7 +191,7 @@
       <h2 class="section-title">Contact me</h2>
       <p class="section-description">If you have an application you are interested in developing, a feature that you
         need built or a project that needs coding. I’d love to help with it</p>
-      <form action="https://formspree.io/f/mgedpajj" method="post" class="form-wrapper">
+      <form id="contact-form" action="https://formspree.io/f/mgedpajj" method="post" class="form-wrapper">
         <fieldset class="form-fieldset">
           <div class="form-group">
             <input type="text" name="name" id="name" class="form-input" placeholder="Your name" required maxlength="30">
@@ -204,6 +204,7 @@
               placeholder="Please write your message here" maxlength="500" required></textarea>
           </div>
           <div class="form-group web-centered">
+            <span id="form-errors"></span>
             <button type="submit" class="button button-enabled contact-button">Get In Touch</button>
           </div>
         </fieldset>
@@ -270,6 +271,7 @@
     </div>
     <script type="text/javascript" src="js/menu.js"></script>
     <script type="text/javascript" src="js/works-detail.js"></script>
+    <script type="text/javascript" src="js/form-validation.js"></script>
 </body>
 
 </html>
