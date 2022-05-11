@@ -34,5 +34,4 @@ function showWorkModal(work) {
   document.querySelector("#work-modal-source").href = workDetails.source;
   //show the modal with transition
   document.querySelector(".modal").style.display = "flex";
-
 }

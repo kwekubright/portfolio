@@ -8,7 +8,7 @@ for (let key in works) {
   index++;
   workCard +=
     `
-    <div class="flex works-grid-item ${wordCardShouldReverse(index)}">
+    <div class="flex works-grid-item ${workCardShouldReverse(index)}">
       <div class="work-image">
         <img class="width-100" src="${works[key].featured_image}" alt="${works[key].title}">
       </div>
@@ -27,7 +27,7 @@ for (let key in works) {
 workCardContainer.innerHTML = workCard;
 
 //reverse the order of the work cards
-function wordCardShouldReverse(integ) {
+function workCardShouldReverse(integ) {
   if (index % 2 === 0) {
     return "row-reverse";
   } else {
