@@ -709,5 +709,6 @@ form {
   .modal-content-text {
     flex-direction: row;
     gap: 2.25rem;
+    padding-bottom: 3.875rem;
   }
 }

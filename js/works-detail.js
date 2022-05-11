@@ -1,6 +1,6 @@
 //select the works container
-const workCardContainer = document.querySelector(".works-grid-container");
-let workCard = "";
+const workCardContainer = document.querySelector('.works-grid-container');
+let workCard = '';
 let index = 0;
 
 //create the work cards
@@ -29,28 +29,28 @@ workCardContainer.innerHTML = workCard;
 //reverse the order of the work cards
 function workCardShouldReverse(integ) {
   if (index % 2 === 0) {
-    return "row-reverse";
+    return 'row-reverse';
   } else {
-    return "";
+    return '';
   }
 }
 
 //create the breadcrumbs
 function breadcrumbsHtml(workObj, key) {
-  let bread = "<ul>";
+  let bread = '<ul>';
   for (let breadcrumb in workObj[key].breadcrumbs) {
     bread += `<li>${workObj[key].breadcrumbs[breadcrumb]}</li>`;
   }
-  bread += "</ul>";
+  bread += '</ul>';
   return bread;
 }
 
 //create the language list
 function languageHtml(workObj, key) {
-  let lang_list = `<ul class="work-categories margin-top-12 padding-0">`;
+  let lang_list = '<ul class="work-categories margin-top-12 padding-0">';
   for (let lang in workObj[key].lang_list) {
     lang_list += `<li><span>${workObj[key].lang_list[lang]}</span></li>`;
   }
-  lang_list += "</ul>";
+  lang_list += '</ul>';
   return lang_list;
 }
