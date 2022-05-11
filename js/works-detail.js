@@ -2,11 +2,11 @@
 // Work object
 // ============================================================
 
-let works = {
+const works = {
   avocode: {
     title: 'Avocode Portfolio',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    'details': 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+    details: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     featured_image: 'images/works/avocode.jpeg',
     lang_list: ['javascript', 'html', 'css'],
     breadcrumbs: ['Home', 'Works', 'Calenda'],
@@ -42,8 +42,8 @@ let works = {
     breadcrumbs: ['Home', 'Works', 'Calenda'],
     source: 'https://github.com/kwekubright/portfolio',
     live_demo: 'https://kwekubright.github.io/portfolio/',
-  }
-}
+  },
+};
 
 // ============================================================
 // Work Detail Logic
@@ -59,22 +59,22 @@ function workCardShouldReverse(index) {
 
 // create the breadcrumbs
 function breadcrumbsHtml(workObj, key, bread = '') {
-  /* eslint-disable no-restricted-syntax */
-  for (let breadcrumb in workObj[key].breadcrumbs) {
-    bread += `<li>${workObj[key].breadcrumbs[breadcrumb]}</li>`;
+  for (const breadcrumb in workObj[key].breadcrumbs) {
+    if (breadcrumb) {
+      bread += `<li>${workObj[key].breadcrumbs[breadcrumb]}</li>`;
+    }
   }
-  /* eslint-enable no-restricted-syntax */
 
   return bread;
 }
 
 // create the language list
 function languageHtml(workObj, key, langList = '') {
-  /* eslint-disable no-restricted-syntax */
-  for (let lang in workObj[key].lang_list) {
-    langList += `<li><span>${workObj[key].lang_list[lang]}</span></li>`;
+  for (const lang in workObj[key].lang_list) {
+    if (lang) {
+      langList += `<li><span>${workObj[key].lang_list[lang]}</span></li>`;
+    }
   }
-  /* eslint-enable no-restricted-syntax */
 
   return langList;
 }
@@ -88,22 +88,23 @@ let index = 0;
 
 /* eslint-disable no-restricted-syntax */
 for (const key in works) {
-  index++;
-  workCard +=
-    `
-    <div class="flex works-grid-item ${workCardShouldReverse(index)}">
-      <div class="work-image">
-        <img class="width-100" src="${works[key].featured_image}" alt="${works[key].title}">
-      </div>
-      <div class="flex work-details-wrapper">
-      <h3 class="section-title margin-top-12">${works[key].title}</h3>
-      <div class="work-period"> <ul>${breadcrumbsHtml(works, key)} </ul> </div> 
-      <p class="work-description text-color-primary margin-top-20">${works[key].description}</p>
-      <ul class="work-categories margin-top-12 padding-0">${languageHtml(works, key)}</ul>
-      <button type="button" class="button button-enabled see-project-button" data-work="${key}">See Project</button>
-      </div>
+  index += 1;
+  workCard
+    +=
+  `
+  <div class="flex works-grid-item ${workCardShouldReverse(index)}">
+    <div class="work-image">
+      <img class="width-100" src="${works[key].featured_image}" alt="${works[key].title}">
     </div>
-  `;
+    <div class="flex work-details-wrapper">
+    <h3 class="section-title margin-top-12">${works[key].title}</h3>
+    <div class="work-period"> <ul>${breadcrumbsHtml(works, key)} </ul> </div> 
+    <p class="work-description text-color-primary margin-top-20">${works[key].description}</p>
+    <ul class="work-categories margin-top-12 padding-0">${languageHtml(works, key)}</ul>
+    <button type="button" class="button button-enabled see-project-button" data-work="${key}">See Project</button>
+    </div>
+  </div>
+`;
 }
 /* eslint-enable no-restricted-syntax */
 
@@ -128,7 +129,7 @@ function showWorkModal(work) {
   document.querySelector('.work-modal-breadcrumbs > ul').innerHTML = breadcrumbsHtml(works, work);
   // add the languages to the modal
   document.querySelector('.work-modal-languages > ul').innerHTML = languageHtml(works, work);
-  // add live demo link 
+  // add live demo link
   document.querySelector('#work-modal-live-demo').href = workDetails.live_demo;
   // add source link
   document.querySelector('#work-modal-source').href = workDetails.source;
