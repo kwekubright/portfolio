@@ -1,10 +1,41 @@
-//select the works container
+// reverse the order of the work cards
+function workCardShouldReverse(integ) {
+  if (index % 2 === 0) {
+    return 'row-reverse';
+  } else {
+    return '';
+  }
+}
+
+// create the breadcrumbs
+function breadcrumbsHtml(workObj, key) {
+  let bread = '<ul>';
+  for (let breadcrumb in workObj[key].breadcrumbs) {
+    bread += `<li>${workObj[key].breadcrumbs[breadcrumb]}</li>`;
+  }
+  bread += '</ul>';
+  return bread;
+}
+
+// create the language list
+function languageHtml(workObj, key) {
+  let lang_list = '<ul class="work-categories margin-top-12 padding-0">';
+  for (let lang in workObj[key].lang_list) {
+    lang_list += `<li><span>${workObj[key].lang_list[lang]}</span></li>`;
+  }
+  lang_list += '</ul>';
+  return lang_list;
+}
+
+//  select the works container
 const workCardContainer = document.querySelector('.works-grid-container');
 let workCard = '';
 let index = 0;
 
-//create the work cards
-for (let key in works) {
+// create the work cards
+
+/* eslint-disable */
+for (const key in works) {
   index++;
   workCard +=
     `
@@ -22,35 +53,7 @@ for (let key in works) {
     </div>
   `;
 }
+/* eslint-enable */
 
-//append the work cards to the works container
+// append the work cards to the works container
 workCardContainer.innerHTML = workCard;
-
-//reverse the order of the work cards
-function workCardShouldReverse(integ) {
-  if (index % 2 === 0) {
-    return 'row-reverse';
-  } else {
-    return '';
-  }
-}
-
-//create the breadcrumbs
-function breadcrumbsHtml(workObj, key) {
-  let bread = '<ul>';
-  for (let breadcrumb in workObj[key].breadcrumbs) {
-    bread += `<li>${workObj[key].breadcrumbs[breadcrumb]}</li>`;
-  }
-  bread += '</ul>';
-  return bread;
-}
-
-//create the language list
-function languageHtml(workObj, key) {
-  let lang_list = '<ul class="work-categories margin-top-12 padding-0">';
-  for (let lang in workObj[key].lang_list) {
-    lang_list += `<li><span>${workObj[key].lang_list[lang]}</span></li>`;
-  }
-  lang_list += '</ul>';
-  return lang_list;
-}

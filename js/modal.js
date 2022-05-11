@@ -1,20 +1,4 @@
-// show modal when see project button is clicked
-const seeProjectButtons = document.querySelectorAll('.see-project-button');
-seeProjectButtons.forEach((button) => {
-  button.addEventListener('click', (event) => {
-    showWorkModal(event.target.dataset.work);
-    document.querySelector('.modal').style.display = 'flex';
-  }
-  );
-});
-
-// close modal when the close button is clicked
-const closeModal = document.querySelector('.modal-close');
-closeModal.addEventListener('click', () => {
-  document.querySelector('.modal').style.display = 'none';
-});
-
-// show the modal with the work details
+// function to  show the modal with the work details
 function showWorkModal(work) {
   // fetch the work from the works object
   const workDetails = works[work];
@@ -35,3 +19,18 @@ function showWorkModal(work) {
   // show the modal with transition
   document.querySelector('.modal').style.display = 'flex';
 }
+
+// show modal when see project button is clicked
+const seeProjectButtons = document.querySelectorAll('.see-project-button');
+seeProjectButtons.forEach((button) => {
+  button.addEventListener('click', (event) => {
+    showWorkModal(event.target.dataset.work);
+    document.querySelector('.modal').style.display = 'flex';
+  }, false);
+});
+
+// close modal when the close button is clicked
+const closeModal = document.querySelector('.modal-close');
+closeModal.addEventListener('click', () => {
+  document.querySelector('.modal').style.display = 'none';
+});
