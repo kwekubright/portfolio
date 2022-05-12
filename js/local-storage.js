@@ -1,9 +1,10 @@
 // store form fields as single object in local storage
 function storeFormField(e) {
+  /* eslint-disable no-restricted-syntax */
   const field = e.target.dataset.field;
+  /* eslint-enable no-restricted-syntax */
   // get the form fields
-  const fieldId = '#' + field;
-  const fieldValue = document.querySelector(fieldId).value;
+  const fieldValue = document.getElementById(field).value;
   // unserialize form object from local storage
   const formFields = JSON.parse(localStorage.getItem('formObject'));
   // update name field in formfields object
