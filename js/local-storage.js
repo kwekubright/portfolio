@@ -34,9 +34,9 @@ function checkFormObject() {
   }
 }
 
-//load the form fields from local storage
+// load the form fields from local storage
 window.onload = () => {
-  //populate the form fields
+  // populate the form fields
   checkFormObject();
 };
 
