@@ -39,19 +39,19 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **Aster Alemu**
 
-- GitHub: [@kwekubright](https://github.com/aster-alemu)
+- GitHub: [@Aster](https://github.com/aster-alemu)
 
 👤 **Cecilia Mukima**
 
-- GitHub: [@kwekubright](https://github.com/c3c1l1a)
+- GitHub: [@Cecilia](https://github.com/c3c1l1a)
 
 👤 **Natnael Demelash**
 
-- GitHub: [@kwekubright](https://github.com/NatiDeme)
+- GitHub: [@Nati](https://github.com/NatiDeme)
 
 👤 **Yohannes Dagnachew**
 
-- GitHub: [@kwekubright](https://github.com/yohannesdagnachew)
+- GitHub: [@Jo](https://github.com/yohannesdagnachew)
 
 ## 🤝 Contributing
 
