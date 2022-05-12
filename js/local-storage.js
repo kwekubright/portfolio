@@ -1,26 +1,15 @@
-// trigger storeFormFields function on name change
-document.querySelector('#name').addEventListener('keydown', storeFormFields);
-// trigger storeFormFields function on email change
-document.querySelector('#email').addEventListener('keydown', storeFormFields);
-//trigger storeFormFields function on message change
-document.querySelector('#message').addEventListener('keydown', storeFormFields);
-
 //store form fields as single object in local storage
-function storeFormFields(e) {
-  console.log("test");
+function storeFormField(e) {
   const field = e.target.dataset.field;
   // get the form fields
   const fieldValue = document.querySelector('#' + field).value;
-
   // unserialize form object from local storage
   const formFields = JSON.parse(localStorage.getItem('formObject'));
   // update name field in formfields object
   formFields[field] = fieldValue;
-
   // serialize form object to local storage
   localStorage.setItem('formObject', JSON.stringify(formFields));
 }
-
 
 // check if formObject is in local storage
 function checkFormObject() {
@@ -42,4 +31,12 @@ function checkFormObject() {
     document.querySelector('#message').value = formObject.message;
   }
 }
+
 checkFormObject();
+
+// trigger storeFormFields function on name change
+document.querySelector('#name').addEventListener('keydown', storeFormField);
+// trigger storeFormFields function on email change
+document.querySelector('#email').addEventListener('keydown', storeFormField);
+//trigger storeFormFields function on message change
+document.querySelector('#message').addEventListener('keydown', storeFormField);
