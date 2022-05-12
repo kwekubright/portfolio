@@ -1,8 +1,9 @@
-//store form fields as single object in local storage
+// store form fields as single object in local storage
 function storeFormField(e) {
   const field = e.target.dataset.field;
   // get the form fields
-  const fieldValue = document.querySelector('#' + field).value;
+  const fieldId = '#' + field;
+  const fieldValue = document.querySelector(fieldId).value;
   // unserialize form object from local storage
   const formFields = JSON.parse(localStorage.getItem('formObject'));
   // update name field in formfields object
@@ -38,5 +39,5 @@ checkFormObject();
 document.querySelector('#name').addEventListener('keydown', storeFormField);
 // trigger storeFormFields function on email change
 document.querySelector('#email').addEventListener('keydown', storeFormField);
-//trigger storeFormFields function on message change
+// trigger storeFormFields function on message change
 document.querySelector('#message').addEventListener('keydown', storeFormField);
