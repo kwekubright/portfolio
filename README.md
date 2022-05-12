@@ -48,8 +48,6 @@ To get a local copy up and running follow these simple example steps.
 👤 **Natnael Demelash**
 
 - GitHub: [@kwekubright](https://github.com/NatiDeme)
-- Twitter: [@twitterhandle](https://twitter.com/kwekubright_)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/kwekubright)
 
 👤 **Yohannes Dagnachew**
 
