@@ -1,8 +1,8 @@
 // store form fields as single object in local storage
 function storeFormField(e) {
-  /* eslint-disable no-restricted-syntax */
+  /* eslint-disable */
   const field = e.target.dataset.field;
-  /* eslint-enable no-restricted-syntax */
+  /* eslint-enable  */
   // get the form fields
   const fieldValue = document.getElementById(field).value;
   // unserialize form object from local storage
