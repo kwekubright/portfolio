@@ -34,7 +34,11 @@ function checkFormObject() {
   }
 }
 
-checkFormObject();
+//load the form fields from local storage
+window.onload = () => {
+  //populate the form fields
+  checkFormObject();
+};
 
 // trigger storeFormFields function on name change
 document.querySelector('#name').addEventListener('keydown', storeFormField);

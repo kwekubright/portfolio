@@ -31,11 +31,29 @@ To get a local copy up and running follow these simple example steps.
 
 ## Authors
 
-👤 **Author**
+👤 **Bright Ahiadeke**
 
 - GitHub: [@kwekubright](https://github.com/kwekubright)
 - Twitter: [@twitterhandle](https://twitter.com/kwekubright_)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/kwekubright)
+
+👤 **Aster Alemu**
+
+- GitHub: [@kwekubright](https://github.com/aster-alemu)
+
+👤 **Cecilia Mukima**
+
+- GitHub: [@kwekubright](https://github.com/c3c1l1a)
+
+👤 **Natnael Demelash**
+
+- GitHub: [@kwekubright](https://github.com/NatiDeme)
+- Twitter: [@twitterhandle](https://twitter.com/kwekubright_)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/kwekubright)
+
+👤 **Yohannes Dagnachew**
+
+- GitHub: [@kwekubright](https://github.com/yohannesdagnachew)
 
 ## 🤝 Contributing
 
