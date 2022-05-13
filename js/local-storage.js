@@ -41,8 +41,8 @@ window.onload = () => {
 };
 
 // trigger storeFormFields function on name change
-document.querySelector('#name').addEventListener('keydown', storeFormField);
+document.querySelector('#name').addEventListener('keydown', storeFormField());
 // trigger storeFormFields function on email change
-document.querySelector('#email').addEventListener('keydown', storeFormField);
+document.querySelector('#email').addEventListener('keydown', storeFormField());
 // trigger storeFormFields function on message change
-document.querySelector('#message').addEventListener('keydown', storeFormField);
+document.querySelector('#message').addEventListener('keydown', storeFormField());

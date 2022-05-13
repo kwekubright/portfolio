@@ -95,7 +95,7 @@ for (const key in works) {
   if (key) {
     index += 1;
     workCard
-      += `
+      = `
         <div class="flex works-grid-item ${workCardShouldReverse(index)}">
           <div class="work-image">
             <img class="width-100" src="${works[key].featured_image}" alt="${works[key].title}">
