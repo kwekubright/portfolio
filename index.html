@@ -194,14 +194,14 @@
       <form id="contact-form" action="https://formspree.io/f/mgedpajj" method="post" class="form-wrapper">
         <fieldset class="form-fieldset">
           <div class="form-group">
-            <input type="text" name="name" id="name" class="form-input" placeholder="Your name" required maxlength="30">
+            <input type="text" name="name" id="name" class="form-input" placeholder="Your name" required maxlength="30" data-field="name">
           </div>
           <div class="form-group">
-            <input type="email" name="email" id="email" class="form-input" placeholder="Your email" required>
+            <input type="email" name="email" id="email" class="form-input" placeholder="Your email" required data-field="email">
           </div>
           <div class="form-group">
             <textarea name="message" rows="10" cols="30" id="message" class="form-input"
-              placeholder="Please write your message here" maxlength="500" required></textarea>
+              placeholder="Please write your message here" maxlength="500" required data-field="message"></textarea>
           </div>
           <div class="form-group">
             <span id="form-errors" class="form-errors"></span>
@@ -276,6 +276,7 @@
   <script type="text/javascript" src="js/menu.js"></script>
   <script type="text/javascript" src="js/works-detail.js"></script>
   <script type="text/javascript" src="js/form-validation.js"></script>
+  <script type="text/javascript" src="js/local-storage.js"></script>
 </body>
 
 </html>
